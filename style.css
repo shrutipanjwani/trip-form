@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    align-items: center;
+    background: #D8AA96;
+    display: grid;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 100vh;
+    justify-items: center;
+}
+.container{
+    margin: 10px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "left right";
+    max-width: 900px;
+}
+.left-container {
+    background: #655C6F;
+    overflow: hidden;
+    padding: 40px 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 300px;
+}
+
+.left-container h1 {
+    color: #fff;
+    display: inline-block;
+    font-size: 24px;
+}
+.left-container h1 i {
+    background: #F7B1AB;
+    border-radius: 50%;
+    color: #655C6F;
+    font-size: 24px;
+    margin-right: 5px;
+    padding: 10px;
+}
+.left-container .trip {
+    bottom: -10px;
+    left: -120px;
+    position: absolute;
+    text-align: center;
+}
+.left-container .trip:before {
+    background: #655C6F;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.right-container{
+    background: #f9c7c2;
+    width: 500px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.right-container h3, .right-container p{
+    padding: 5px;
+    margin: 5px;
+    color: #655C6F;
+}
+
+label{
+    width: 80%;
+    text-align: left;
+    color: #655C6F;
+}
+
+textarea, input{
+    display: block;
+    width: 80%;
+    margin: 5px auto 20px;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn{
+    font-size: 16px;
+    background: #F7B1AB;
+    color: #655C6F;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+}
+
+.submitMsg{
+    background: #655C6F;
+    color: #ffffff !important;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-container{
+        width: 100%;
+        padding: 30px 0px 30px 0px;
+    }
+    .left-container img{
+        display: none;
+    }
+    .right-container{
+        width: 100%;
+    }
+}
